@@ -10,25 +10,6 @@ public class Caminhao {
 	double aroRoda, qtdCargaSuportada, qtdCargaAbastecida, capacidadeCarga, cargaAtual;
 	boolean ligado;
 
-	{
-
-		this.marca = marca;
-		this.cor = cor;
-		this.anoFabricacao = anoFabricacao;
-		this.modelo = modelo;
-		this.renavam = renavam;
-		this.motor = motor;
-		this.tipoCambio = tipoCambio;
-		this.aroRoda = aroRoda;
-		this.nomeCondutor = nomeCondutor;
-		this.capacidadeCarga = capacidadeCarga;
-		this.eixo = eixo;
-		this.cargaAtual = 0;
-		this.velocidade = 0;
-		this.tipoCarga = "";
-		this.ligado = false;
-	}
-
 	public void ligar() {
 		if (!this.ligado) {
 			ligado = true;
@@ -99,7 +80,7 @@ public class Caminhao {
 			System.out.println("Erro: capacidade de carga excedida! limite maximo e " + capacidadeCarga + "kg");
 		}
 	}
-	
+
 	public void descarregar(double quantidade) {
 		if (cargaAtual >= quantidade) {
 			cargaAtual -= quantidade;

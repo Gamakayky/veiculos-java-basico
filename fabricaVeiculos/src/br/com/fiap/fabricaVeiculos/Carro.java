@@ -16,20 +16,6 @@ public class Carro {
 	String nomeCondutor;
 	boolean ligado;
 
-	{
-		this.marca = marca;
-		this.cor = cor;
-		this.anoFabricacao = anoFabricacao;
-		this.modelo = modelo;
-		this.renavam = renavam;
-		this.motor = motor;
-		this.tipoCambio = tipoCambio;
-		this.aroRoda = aroRoda;
-		this.nomeCondutor = nomeCondutor;
-		this.velocidade = 0;
-		this.ligado = false;
-	}
-
 	public void ligar() {
 		if (!this.ligado) {
 			ligado = true;
