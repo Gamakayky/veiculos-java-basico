@@ -36,7 +36,7 @@ public class Caminhao {
 		} else if (!ligado) {
 			System.out.println("O caminhao ja esta ligado");
 		} else {
-			System.out.println("O caminhao precisa estar parado para ser desligado");
+			System.out.println("O caminhao precisa estar parado para ser ligado");
 		}
 	}
 
